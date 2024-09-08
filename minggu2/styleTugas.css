@@ -1,0 +1,73 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(to right, #2c7ce4, #2259a2);
+  line-height: 1.65;
+  padding-bottom: 100px;
+}
+
+.container-satu {
+  width: 900px;
+  margin: 50px auto;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+}
+
+.kolom-utama {
+  margin: 0px 10px;
+  flex: 3;
+  order: 2; /* Urutan kedua */
+}
+
+.kolom-utama h2 {
+  margin-top: 0px;
+  margin-bottom: -10px;
+}
+
+.sidebar-satu {
+  flex: 0.7; /* Sidebar satu lebih kecil */
+  order: 1; /* Urutan pertama */
+  background-color: #e8ecee8d;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.sidebar-satu ul {
+  list-style: none;
+  font-weight: bold;
+  padding: auto;
+}
+
+.sidebar-satu ul li {
+  padding: 3px;
+}
+
+.sidebar-satu ul li a {
+  text-decoration: none;
+  color: #2259a2;
+}
+
+.sidebar-satu ul li a:hover {
+  color: #68c2f3;
+}
+
+.sidebar-dua {
+  flex: 1; /* Sidebar dua juga berukuran kecil */
+  order: 3; /* Urutan ketiga */
+  background-color: #e8ecee8d;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+img {
+  max-width: 100%;
+  border-radius: 10px;
+  margin: 5px 0;
+}
