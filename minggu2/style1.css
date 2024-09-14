@@ -21,7 +21,7 @@ body {
 }
 
 .kolom-utama {
-  margin: 0px 10px;
+  /* margin: 0px 10px; */
   flex: 3;
   order: 2;
 }
