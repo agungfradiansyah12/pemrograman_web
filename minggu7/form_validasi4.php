@@ -6,7 +6,7 @@
 </head>
 <body>
     <h1>Form Input dengan Validasi</h1>
-    <form id="myForm" method="post" action="proses_validasi.php">
+    <form id="myForm" method="post" action="proses_validasi_pw.php">
         <label for="nama">Nama:</label>
         <input type="text" id="nama" name="nama">
         <span id="nama-error" style="color: red;"></span><br>
@@ -60,7 +60,7 @@
                 if (valid) {
                     // Kirim data menggunakan AJAX
                     $.ajax({
-                        url: 'proses_validasi.php',
+                        url: 'proses_validasi_pw.php',
                         type: 'POST',
                         data: { nama: nama, email: email, password: password }, // Menyertakan password dalam data yang dikirim
                         success: function(response) {
