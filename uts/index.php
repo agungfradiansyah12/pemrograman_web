@@ -41,8 +41,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login - Laundry Service</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="bootstrap-5.3.3-dist/css/bootstrap.min.css" />
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"> -->
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
 </head>
 <body>
 
@@ -50,11 +51,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <div class="row h-100">
 
         <!-- Bagian kiri untuk gambar dengan margin -->
-<div class="col-md-7 d-none d-md-block p-0" style="padding: 40px;">
-    <div class="h-100 d-flex justify-content-center align-items-center" style="margin: 30px; margin-top: 5px; margin-bottom: 5px;">
-        <img src="images/4.jpg" class="img-fluid" alt="Company Logo" style="max-width: 100%; height: 90%; border-radius: 10px;">
-    </div>
-</div>
+        <div class="col-md-7 d-none d-md-block p-0" style="padding: 40px;">
+            <div class="h-100 d-flex justify-content-center align-items-center" style="margin: 30px; margin-top: 5px; margin-bottom: 5px;">
+                <img src="images/4.jpg" class="img-fluid" alt="Company Logo" style="max-width: 100%; height: 90%; border-radius: 10px;">
+            </div>
+        </div>
 
         <!-- Bagian kanan untuk form login -->
         <div class="col-md-5 d-flex align-items-center justify-content-center">

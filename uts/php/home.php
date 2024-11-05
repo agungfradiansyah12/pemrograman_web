@@ -15,6 +15,32 @@ if (!isset($_SESSION['username'])) {
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/StyleSlideShow.css">
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <style>
+        
+        body {
+            display: flex;
+            flex-direction: column;
+        }
+        .content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center; /* Center the content vertically */
+        }
+
+        .logout-button {
+            text-align: center;
+            background-color: black;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 30px;
+            text-decoration: none;
+            height: auto;
+            width: 100px;
+            display: inline-block;
+    }
+    </style>
     <script>
         var i = 0;
         $(document).ready(function () {
@@ -73,7 +99,7 @@ if (!isset($_SESSION['username'])) {
     <div class="row" style="height: 150px;">
         <div class="col-md-8 d-flex align-items-center">
             <div>
-                <h3 style="color: black; font-weight: bold;">Dapatkan Layanan Cuci Terbaik!</h3> <!-- Teks tebal dan hitam -->
+                <h3 style="color: black; font-weight: bold;">Selamat datang <?php echo $_SESSION['username']; ?></h3> <!-- Teks tebal dan hitam -->
                 <p style="color: black;">Kami siap melayani semua kebutuhan laundry Anda dengan harga yang terjangkau dan kualitas terbaikKami siap melayani semua kebutuhan laundry Anda dengan harga k.</p>
             </div>
         </div>
@@ -86,9 +112,9 @@ if (!isset($_SESSION['username'])) {
 
 <!-- Slider -->
 <div id="slider" class="container mt-4">
-    <img src="../images/1.jpg" id="SliderImage1" alt="Banner 1">
-    <img src="../images/2.jpg" id="SliderImage2" alt="Banner 2">
-    <img src="../images/3.jpg" id="SliderImage3" alt="Banner 3">
+    <img src="../images/1.jpg" id="SliderImage1" alt="foto 1">
+    <img src="../images/2.jpg" id="SliderImage2" alt="foto 2">
+    <img src="../images/3.jpg" id="SliderImage3" alt="foto 3">
 </div>
 
 

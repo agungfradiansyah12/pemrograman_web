@@ -50,66 +50,17 @@ footer {
   padding: 10px 0;
 }
 
-.logout-button {
-  text-align: center;
-  background-color: black;
-  color: white;
-  padding: 10px 15px;
-  border: none;
-  border-radius: 30px;
-  text-decoration: none;
-  height: auto;
-  width: 100px;
-  /*Aturlebartombol*/
-  display: inline-block;
-  /*Agarlebarberfungsidenganbaik*/
-  -webkit-border-radius: 30px;
-  -moz-border-radius: 30px;
-  -ms-border-radius: 30px;
-  -o-border-radius: 30px;
-}
-
-.logout-button:hover {
-  background-color: darkgray; /* Warna saat hover */
-  color: white; /* Teks tetap putih saat hover */
-}
-
-/* Style untuk tombol */
-.btn-custom {
-  background-color: #466ed0; /* Tombol Cek Harga */
-  border: none;
-  border-radius: 5px;
-  padding: 10px 15px;
-  color: #fff; /* Warna teks tombol putih */
-  font-weight: bold; /* Menebalkan teks tombol */
-  transition: background-color 0.3s, transform 0.3s; /* Efek transisi */
-}
-
-.btn-custom:hover {
-  background-color: #3a5b9d; /* Warna saat hover */
-  transform: scale(1.05); /* Membesar sedikit saat hover */
-}
-
-/* Style untuk footer */
 footer {
-  background-color: #34568b; /* Warna footer lebih gelap dari #466ed0 */
+  background-color: #34568b;
   padding: 10px 0;
-  color: #fefefe; /* Warna teks footer */
+  color: #fefefe;
 }
 
-/* Style untuk alert box */
 .alert {
-  border-radius: 10px; /* Membulatkan sudut alert */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Menambahkan bayangan */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 /* Style untuk navbar */
 .navbar {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Menambahkan bayangan pada navbar */
-}
-
-/* Menambahkan style untuk judul */
-h2,
-h4 {
-  color: #466ed0; /* Warna judul sesuai dengan tema */
 }

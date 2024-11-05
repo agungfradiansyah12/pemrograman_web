@@ -42,8 +42,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cek Harga - Laundry Service</title>
+    <link rel="stylesheet" href="../bootstrap-5.3.3-dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="../css/StyleSlideShow.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"> -->
     <style>
         html, body {
             height: 100%;
@@ -132,11 +134,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <div class="mt-4 mb-4">
             <h4 class="text-center">Hasil Perhitungan</h4>
             <div class="alert alert-info text-center">
-                <p>Total Transaksi: Rp <?= number_format($total, 0, ',', '.') ?></p>
+                <p>Total Transaksi: Rp <?= number_format($total, 2, ',', '.') ?></p>
                 <?php if ($diskon > 0): ?>
-                    <p>Diskon (Member): Rp <?= number_format($diskon, 0, ',', '.') ?></p>
+                    <p>Diskon (Member): Rp <?= number_format($diskon, 2, ',', '.') ?></p>
                 <?php endif; ?>
-                <p>Total yang Harus Dibayar: Rp <?= number_format($total, 0, ',', '.') ?></p>
+                <p>Total yang Harus Dibayar: Rp <?= number_format($total, 2, ',', '.') ?></p>
             </div>
         </div>
     <?php endif; ?>
