@@ -1,6 +1,4 @@
 <?php
-//session_start();
-
 function set_flashdata($key = "", $value = "")
 {
     if (!empty($key) && !empty($value)) { 

@@ -3,35 +3,31 @@
 <?php
 require 'admin/template/menu.php';
 $id = $_GET['id'];
-$query = "SELECT * FROM anggota a, jabatan j, user u WHERE a.jabatan_id = j.id AND a.user_id
-= u.id AND a.user_id = '$id'";
+$query = "SELECT * FROM anggota a, jabatan j, user u WHERE a.jabatan_id = j.id AND a.user_id= u.id AND a.user_id = '$id'";
 $result = mysqli_query($koneksi, $query);
 $row = mysqli_fetch_assoc($result);
-?><main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
-<div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center
-pt-3 pb-2 mb-3 border-bottom">
+?>
+
+<main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+<div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
 <h1 class="h2">Anggota</h1>
 </div>
 <form action="fungsi/edit.php?anggota=edit" method="POST">
-<div class="row">
-<div class="col-sm-6">
-<div class="card">
-<div class="card-header">
-Form Edit Anggota
-</div>
-<div class="card-body">
-<input type="hidden" value="<?php echo $row['user_id']; ?>"
-name="id">
-<div class="mb-3">
-<label for="nama" class="form-label">Nama</label>
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="card">
+                <div class="card-header">Form Edit Anggota</div>
+                <div class="card-body">
+                    <input type="hidden" value="<?php echo $row['user_id']; ?>" name="id">
+                    <div class="mb-3">
+                        <label for="nama" class="form-label">Nama</label>
 <input type="text" class="form-control" name="nama" value="<?=
 $row['nama']; ?>">
 </div>
 <div class="mb-3">
 <label for="recipient-name"
 class="col-form-label">Jabatan:</label>
-<select class="form-select" name="jabatan" name
-aria-label="Default select example">
+<select class="form-select" name="jabatan" name aria-label="Default select example">
 <option selected>Pilih Jabatan</option>
 <?php
 $query2 = "SELECT * FROM jabatan order by jabatan asc";
@@ -83,7 +79,7 @@ Form Edit Login Anggota
 <div class="card-body">
 <div class="mb-3">
 <label for="username" class="form-label">Username</label>
-23<input type="text" class="form-control" name="username"
+    <input type="text" class="form-control" name="username"
 value="<?= $row['username']; ?>">
 </div>
 <div class="mb-3">
